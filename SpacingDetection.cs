@@ -75,7 +75,7 @@ public class SpacingDetection
     {
         if (numberOfPlayersNeeded <= 0 || damege_mod == 0) { return new object[] { }; }
 
-        //more efficient init. -- could consider just storing this tbh that way its not calculated at every shot. TODO: consider doing <--
+        //could calculate a lot of this stuff on initialization so it doesnt happen on every shot <-- TODO
         float safeZoneSQR = safe_zone * safe_zone;
         float maxWarningDistanceSQR = max_warning_distance * max_warning_distance;
 
